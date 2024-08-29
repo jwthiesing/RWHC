@@ -6,7 +6,7 @@ def getsfcwind(height, wind):
 		series = pickle.load(f)
 	targetheight = round(height,-1)
 	#print(series[series.index == 0].values)
-	return (wind/series[series.index == targetheight].values)*series[series.index == 0].values
+	return (wind/series[series.index == targetheight].values)*series[series.index == 10].values
 
 if __name__ == "__main__":
 	# Parse arguments!!
